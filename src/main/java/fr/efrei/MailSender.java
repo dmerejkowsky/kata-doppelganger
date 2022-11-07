@@ -3,7 +3,7 @@ package fr.efrei;
 import fr.efrei.mailprovider.SendRequest;
 
 public class MailSender {
-  private final String baseUrl = "https://api.sendgrid.com/v3/";
+  private final String baseUrl = "https://api.mailprovider.com/v3/";
   private final HttpClient httpClient;
 
   public MailSender(HttpClient httpClient) {
