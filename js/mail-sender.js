@@ -29,7 +29,7 @@ class MailSender {
       const nextTry = this.httpClient.post(this.baseUrl, response)
       return nextTry
     } else {
-        return response
+      return response
     }
   }
 }
