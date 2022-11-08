@@ -1,13 +1,13 @@
-# Java doppelganger
+# Doppelganger
 
 *Goal*: learn about the various types of test doubles
 
 ## Instructions
 
-There are bugs in the code (marked with a `//bug!` comment), but all the
+There are bugs in the code (marked with a `Bug!` comment), but all the
 tests are passing.
 
-For each test, you will find a `// TODO` comment. Your job
+For each test, you will find a `TODO` comment. Your job
 is to implement a test double for each test, and to use it
 to make the test fail for the right reason, i.e, triggering
 the bugs.
