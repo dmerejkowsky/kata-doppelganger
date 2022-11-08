@@ -1,6 +1,6 @@
-# copier template for Javascript
+# Running the tests in javascript
 
-Included:
+* Install `yarn`
+* Run `yarn install` once
+* Run `yarn test`
 
-* `tape.js`
-* `standard`
