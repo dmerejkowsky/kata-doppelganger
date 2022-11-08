@@ -26,7 +26,10 @@ class MailSender {
     const response = this.httpClient.post(this.baseUrl, request)
     if (response.code === 503) {
       // Bug! Should be `post(this.baseUrl, request)
-      this.httpClient.post(this.baseUrl, response)
+      const nextTry = this.httpClient.post(this.baseUrl, response)
+      return nextTry
+    } else {
+        return response
     }
   }
 }
