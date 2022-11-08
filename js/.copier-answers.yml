@@ -1,0 +1,8 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v1.1.0-2-g6b6cdb9
+_src_path: git@git.sr.ht:~dmerej/copier-js
+author_name: Dimitri Merejkowsky
+project_description: Kata about test doubles
+project_name: doppelganger
+project_version: 1.0.0
+
