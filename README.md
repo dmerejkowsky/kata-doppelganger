@@ -17,10 +17,14 @@ are not allowed to change the production code.
 
 For this step, you are not allowed to add any external library.
 
+Make a commit when you're done fixing all the TODOs
+
 ## Step 2 - with a library
 
 Use a library like `mockito` for Java, `unittest.mock` for Python or
 `sinon` for JavaScript to rewrite all the tests.
+
+Make a second commit so you can compare test code with step 1.
 
 Which version do you prefer?
 
