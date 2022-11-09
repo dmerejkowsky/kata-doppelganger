@@ -15,12 +15,12 @@ are not allowed to change the production code.
 
 ## Step 1 - without any library
 
-For this step, you are *not* allowed to use an external library. You have to implement
-the interfaces "by hand".
+For this step, you are not allowed to add any external library.
 
 ## Step 2 - with a library
 
-Use a library like `mockito` to rewrite all the tests.
+Use a library like `mockito` for Java, `unittest.mock` for Python or
+`sinon` for JavaScript to rewrite all the tests.
 
 Which version do you prefer?
 
