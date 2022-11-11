@@ -18,7 +18,7 @@ namespace Doppelganger
             string name = user.Name;
             string email = user.Email;
             var subject = "New notification";
-            // BUG: should be name, email, subject, message
+            // BUG! Should be name, email, subject, message
             var sendRequest = new SendRequest(email, name, subject, message);
             _httpClient.Post(BASE_URL, sendRequest);
         }
@@ -32,6 +32,7 @@ namespace Doppelganger
             var response = _httpClient.Post(BASE_URL, sendRequest);
             if (response.Code == 503)
             {
+                // BUG! Should be Post(BASE_URL, sendRequest)
                 _httpClient.Post(BASE_URL, response);
             }
         }
