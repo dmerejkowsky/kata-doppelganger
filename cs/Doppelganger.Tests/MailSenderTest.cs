@@ -6,13 +6,13 @@ namespace Doppelganger.Tests
         [Test]
         public void TestSendV1()
         {
-            // TODO: make this test fail because of the bug in MailSender.SendV1
+            // TODO: trigger the bug in MailSender.SendV1() by implementing the HttpClient interface
         }
 
         [Test]
         public void TestSendV2()
         {
-           // TODO: make this test fail because of the bug in MailSender.SendV2
+            // TODO: trigger the bug in MailSender.SendV2() by implementing the HttpClient interface
         }
     }
 

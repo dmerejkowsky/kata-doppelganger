@@ -2,12 +2,12 @@ using Doppelganger;
 
 namespace Doppelganger.Tests
 {
-    public class CaluclatorTests
+    public class CalculatorTests
     {
         [Test]
         public void DoNotThrowWhenAuthorized()
         {
-            // TODO
+            // TODO: trigger the bug in Calculator.Divide() by implementing the Authorizer interface
         }
     }
 }
