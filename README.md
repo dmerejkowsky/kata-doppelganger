@@ -13,6 +13,12 @@ to make the test fail for the right reason, i.e, triggering
 the bugs. You must do so by **adding only test code** - you
 are not allowed to change the production code.
 
+Here's the order in which you should fix the test - they go from easiest to trickiest :)
+
+1. SafeCalculator
+1. DiscountApplier
+1. MailSender
+
 ## Step 1 - without any library
 
 For this step, you are not allowed to add any external library.
