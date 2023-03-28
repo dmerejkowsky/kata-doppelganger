@@ -1,10 +1,10 @@
-class Calculator:
+class SafeCalculator:
     def __init__(self, authorizer):
         self.authorizer = authorizer
 
-    def divide(self, numerator, denominator):
+    def add(self, left, right):
         authorized = self.authorizer.authorize()
         # Bug! Should be `if not authorized`
         if authorized:
             raise Exception("Not authorized")
-        return numerator / denominator
+        return left + right
