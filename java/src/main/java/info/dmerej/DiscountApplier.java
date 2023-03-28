@@ -1,4 +1,4 @@
-package fr.efrei;
+package info.dmerej;
 
 import java.util.List;
 

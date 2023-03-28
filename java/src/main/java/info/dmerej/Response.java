@@ -1,4 +1,4 @@
-package fr.efrei;
+package info.dmerej;
 
 public record Response(int code, String message) {
 }

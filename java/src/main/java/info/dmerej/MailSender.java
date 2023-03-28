@@ -1,6 +1,6 @@
-package fr.efrei;
+package info.dmerej;
 
-import fr.efrei.mailprovider.SendRequest;
+import info.dmerej.mailprovider.SendRequest;
 
 public class MailSender {
   private final String baseUrl = "https://api.mailprovider.com/v3/";

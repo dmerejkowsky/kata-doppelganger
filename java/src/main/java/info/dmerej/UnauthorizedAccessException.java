@@ -1,4 +1,4 @@
-package fr.efrei;
+package info.dmerej;
 
 public class UnauthorizedAccessException extends RuntimeException {
   public UnauthorizedAccessException(String message) {
