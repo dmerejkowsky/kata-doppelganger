@@ -1,7 +1,5 @@
-﻿namespace Doppelganger
+﻿namespace Doppelganger;
+public interface INotifier
 {
-    public interface INotifier
-    {
-        void Notify(User user, string message);
-    }
+    void Notify(User user, string message);
 }

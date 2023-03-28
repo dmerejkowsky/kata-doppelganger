@@ -1,8 +1,8 @@
-﻿namespace Doppelganger
+﻿namespace Doppelganger;
+
+public readonly struct Response
 {
-    public readonly struct Response
-    {
-        public int Code { get; init; }
-        public string Message { get; init; }
-    }
+    public int Code { get; init; }
+    public string Message { get; init; }
 }
+

@@ -1,8 +1,8 @@
 ﻿
-namespace Doppelganger
+namespace Doppelganger;
+
+public interface IHttpClient
 {
-    public interface IHttpClient
-    {
-        Response Post(string url, object request);
-    }
+    Response Post(string url, object request);
 }
+

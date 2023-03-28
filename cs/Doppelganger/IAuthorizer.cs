@@ -1,7 +1,7 @@
-﻿namespace Doppelganger
+﻿namespace Doppelganger;
+
+public interface IAuthorizer
 {
-    public interface IAuthorizer
-    {
-        bool Authorize();
-    }
+    bool Authorize();
 }
+
