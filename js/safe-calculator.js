@@ -1,16 +1,16 @@
-class Calculator {
-  constructor (authorizer) {
+class SafeCalculator {
+  constructor(authorizer) {
     this.authorizer = authorizer
   }
 
-  divide (numerator, denominator) {
+  add(left, right) {
     const authorized = this.authorizer.authorize()
     // Bug! Sholud be `if(!authorized)`
     if (authorized) {
       throw new Error('Not authorized')
     }
-    return numerator / denominator
+    return left + right
   }
 }
 
-module.exports = Calculator
+module.exports = SafeCalculator
