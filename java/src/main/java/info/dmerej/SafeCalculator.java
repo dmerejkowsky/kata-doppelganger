@@ -8,7 +8,7 @@ public class SafeCalculator {
   }
 
   public int divide(int left, int right) {
-    var authorized = authorizer.authorize();
+    boolean authorized = authorizer.authorize();
     if (authorized) { // <- bug here, should be if (!authorized)
       throw new UnauthorizedAccessException("Not authorized");
     }
