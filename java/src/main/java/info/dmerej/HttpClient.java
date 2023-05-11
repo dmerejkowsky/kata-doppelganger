@@ -1,5 +1,7 @@
 package info.dmerej;
 
+import info.dmerej.mailprovider.SendMailResponse;
+
 public interface HttpClient {
-  Response post(String url, Object request);
+    SendMailResponse post(String url, Object request);
 }

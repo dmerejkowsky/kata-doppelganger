@@ -1,12 +1,12 @@
-package info.dmerej;
+package info.dmerej.mailprovider;
 
 import java.util.Objects;
 
-public final class Response {
+public final class SendMailResponse {
     private final int code;
     private final String message;
 
-    Response(int code, String message) {
+    public SendMailResponse(int code, String message) {
         this.code = code;
         this.message = message;
     }
@@ -23,9 +23,9 @@ public final class Response {
     public boolean equals(Object obj) {
         if (obj == this) return true;
         if (obj == null || obj.getClass() != this.getClass()) return false;
-        Response that = (Response) obj;
+        SendMailResponse that = (SendMailResponse) obj;
         return this.code == that.code &&
-            Objects.equals(this.message, that.message);
+                Objects.equals(this.message, that.message);
     }
 
     @Override
@@ -36,8 +36,8 @@ public final class Response {
     @Override
     public String toString() {
         return "Response[" +
-            "code=" + code + ", " +
-            "message=" + message + ']';
+                "code=" + code + ", " +
+                "message=" + message + ']';
     }
 
 }
