@@ -2,11 +2,10 @@ from dataclasses import dataclass
 
 
 @dataclass
-class Request:
-    name: str
-    email: str
+class SendMailRequest:
+    recipient: str
     subject: str
-    message: str
+    body: str
 
 
 class MailSender:
@@ -16,12 +15,12 @@ class MailSender:
         self.http_client = http_client
 
     def send_v1(self, user, message):
-        # Bug! Should be `Request(user.name, user.email, ...)`
-        request = Request(user.email, user.name, "New notification", message)
+        # Bug! Should be `SendMailRequest(user.email, "New notification", message)`
+        request = SendMailRequest("New notification", user.email, message)
         return self.http_client.post(self.base_url, request)
 
     def send_v2(self, user, message):
-        request = Request(user.name, user.email, "New notification", message)
+        request = SendMailRequest(user.email, "New notification", message)
         response = self.http_client.post(self.base_url, request)
         if response.code == 503:
             # Bug! Should be `.post(self.base_url, request)`
