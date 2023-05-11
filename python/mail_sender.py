@@ -8,6 +8,12 @@ class SendMailRequest:
     body: str
 
 
+@dataclass
+class SendMailResponse:
+    code: int
+    message: str
+
+
 class MailSender:
     base_url = "https://api.mailsender.com"
 
