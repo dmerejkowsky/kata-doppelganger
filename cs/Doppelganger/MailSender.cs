@@ -16,8 +16,8 @@ public class MailSender
         string name = user.Name;
         string email = user.Email;
         var subject = "New notification";
-        // BUG! Should be name, email, subject, message
-        var sendRequest = new SendRequest(email, name, subject, message);
+        // BUG! Should be SendMailRequest(email, subject, message);
+        var sendRequest = new SendMailRequest(subject, email, message);
         _httpClient.Post(BASE_URL, sendRequest);
     }
 
@@ -26,7 +26,7 @@ public class MailSender
         string name = user.Name;
         string email = user.Email;
         var subject = "New notification";
-        var sendRequest = new SendRequest(name, email, subject, message);
+        var sendRequest = new SendMailRequest(email, subject, message);
         var response = _httpClient.Post(BASE_URL, sendRequest);
         if (response.Code == 503)
         {
