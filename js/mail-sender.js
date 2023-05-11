@@ -1,28 +1,27 @@
-class Request {
-  constructor (name, email, subject, message) {
-    this.name = name
-    this.email = email
+class SendMailRequest {
+  constructor(recipient, subject, body) {
+    this.recipient = recipient
     this.subject = subject
-    this.message = message
+    this.body = body
   }
 }
 
 class MailSender {
-  constructor (httpClient) {
+  constructor(httpClient) {
     this.baseUrl = 'https://api.mailsender.com/v3/'
     this.httpClient = httpClient
   }
 
-  sendV1 (user, message) {
-    const { name, email } = user
-    // Bug! Should be `new Request(name, email, 'New notification', message)`
-    const request = new Request(email, name, 'New notification', message)
+  sendV1(user, message) {
+    const { email } = user
+    // Bug! Should be `new SendMailRequest(email, 'New notification', message)`
+    const request = new SendMailRequest('New notification', email, message)
     this.httpClient.post(this.baseUrl, request)
   }
 
-  sendV2 (user, message) {
-    const { name, email } = user
-    const request = new Request(name, email, 'New notification', message)
+  sendV2(user, message) {
+    const { email } = user
+    const request = new SendMailRequest(email, 'New notification', message)
     const response = this.httpClient.post(this.baseUrl, request)
     if (response.code === 503) {
       // Bug! Should be `post(this.baseUrl, request)
