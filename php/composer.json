@@ -1,0 +1,25 @@
+{
+    "name": "dmerejkowsky/kata-doppelganger",
+    "description": "A kata to learn about different types of test doubles.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Doppelganger\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "tests": "phpunit",
+        "test-coverage": "phpunit --coverage-html build/coverage"
+    }
+}
