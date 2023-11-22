@@ -1,6 +1,6 @@
 import { User } from "./user"
 
-class SendMailRequest {
+export class SendMailRequest {
   recipient: string
   subject: string
   body: string
@@ -12,16 +12,16 @@ class SendMailRequest {
   }
 }
 
-type SendMailResponse = {
+export type SendMailResponse = {
   code: number
 }
 
-interface HttpClient {
+export interface HttpClient {
   post(baseUrl: string, request: Object): SendMailResponse
 }
 
 
-class MailSender {
+export class MailSender {
   baseUrl: string
   httpClient: HttpClient
 
@@ -50,5 +50,3 @@ class MailSender {
     }
   }
 }
-
-module.exports = { MailSender, Request }
