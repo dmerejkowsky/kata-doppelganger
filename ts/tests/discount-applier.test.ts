@@ -1,11 +1,14 @@
-import { test } from "@jest/globals"
+import test from 'tape'
 
-test('apply v1', () => {
+
+test('apply v1', (t) => {
   // TODO: write a test that fails due to the bug in
   // DiscountApplier.applyV1
+  t.end()
 })
 
-test('apply v2', () => {
+test('apply v2', (t) => {
   // TODO: write a test that fails due to the bug in
   // DiscountApplier.applyV2
+  t.end()
 })
