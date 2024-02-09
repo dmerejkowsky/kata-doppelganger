@@ -1,7 +1,6 @@
-import test from "tape"
+import { test } from "@jest/globals"
 
-test('should not throw when authorized', (t) => {
+test('should not throw when authorized', () => {
   // TODO: write a test that fails due to the bug in
   // SafeCalculator.add()
-  t.end()
 })
