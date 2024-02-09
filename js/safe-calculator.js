@@ -5,7 +5,7 @@ class SafeCalculator {
 
   add(left, right) {
     const authorized = this.authorizer.authorize()
-    // Bug! Sholud be `if(!authorized)`
+    // Bug! Should be `if(!authorized)`
     if (authorized) {
       throw new Error('Not authorized')
     }

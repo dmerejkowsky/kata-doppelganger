@@ -12,7 +12,7 @@ export class SafeCalculator {
 
   add(left: number, right: number) {
     const authorized = this.authorizer.authorize()
-    // Bug! Sholud be `if(!authorized)`
+    // Bug! Should be `if(!authorized)`
     if (authorized) {
       throw new Error('Not authorized')
     }
