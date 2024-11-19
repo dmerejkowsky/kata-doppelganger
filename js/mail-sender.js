@@ -6,14 +6,16 @@ class SendMailRequest {
   }
 }
 
+
 class MailSender {
+
   constructor(httpClient) {
     this.baseUrl = 'https://api.mailsender.com/v3/'
     this.httpClient = httpClient
   }
 
   sendV1(user, message) {
-    const { email } = user
+    const { name, email } = user
     // Bug! Should be `new SendMailRequest(email, 'New notification', message)`
     const request = new SendMailRequest('New notification', email, message)
     this.httpClient.post(this.baseUrl, request)
@@ -33,4 +35,4 @@ class MailSender {
   }
 }
 
-module.exports = { MailSender, Request }
+module.exports = { SendMailRequest, MailSender }

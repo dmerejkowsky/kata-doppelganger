@@ -1,17 +1,14 @@
 {
   "name": "doppelganger",
   "version": "1.0.0",
-  "description": "Kata about test doubles",
-  "main": "index.js",
-  "author": "Dimitri Merejkowsky",
-  "license": "MIT",
-  "private": true,
+  "description": "",
+  "main": "index.ts",
   "scripts": {
-    "test": "tape tests/*.test.js",
-    "format": "standard --fix"
+    "test": "jest"
   },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "standard": "^17.0.0",
-    "tape": "^5.5.3"
+    "jest": "^29.5.0"
   }
 }

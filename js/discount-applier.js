@@ -1,9 +1,9 @@
 class DiscountApplier {
-  constructor (notifier) {
+  constructor(notifier) {
     this.notifier = notifier
   }
 
-  applyV1 (discount, users) {
+  applyV1(discount, users) {
     // Bug! Should be `let i = 0`
     for (let i = 1; i < users.length; i++) {
       const message = `You've got a new discount of ${discount}%`
@@ -12,7 +12,7 @@ class DiscountApplier {
     }
   }
 
-  applyV2 (discount, users) {
+  applyV2(discount, users) {
     for (let i = 0; i < users.length; i++) {
       const message = `You've got a new discount of ${discount}%`
       // Bug! Should be `users[i]`
