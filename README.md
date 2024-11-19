@@ -8,8 +8,7 @@ There are bugs in the code (marked with a `Bug!` comment), but all the
 tests are passing.
 
 For each test, you will find a `TODO` comment. Your job
-is to implement a test double for each test, and to use it
-to make the test fail for the right reason, i.e, triggering
+is to finish the implementation of each test and make them fail for the right reason, i.e, triggering
 the bugs. You must do so by **adding only test code** - you
 are not allowed to change the production code.
 
@@ -21,9 +20,11 @@ Here's the order in which you should fix the test - they go from easiest to tric
 
 ## Step 1 - without any library
 
-For this step, you are not allowed to add any external library.
+For this step, you are not allowed to add any external mock library.
 
-Make a commit when you're done fixing all the TODOs
+Start by writing the tests naively - and then make it run (or compile) by adding clases
+to the test code (this is what we call a test double).
+
 
 ## Step 2 - with a library
 
