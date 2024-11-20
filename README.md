@@ -18,21 +18,21 @@ Here's the order in which you should fix the test - they go from easiest to tric
 1. DiscountApplier
 1. MailSender
 
-## Step 1 - without any library
+## Part 1 - without any library
 
-For this step, you are not allowed to add any external mock library.
+For this part, you are not allowed to add any external mock library.
 
 Start by writing the tests naively - and then make it run (or compile) by adding clases
 to the test code (this is what we call a test double).
 
 
-## Step 2 - with a library
+## Part 2 - with a library
 
 Use a library like `mockito` for Java, `unittest.mock` for Python or
 `sinon` for JavaScript to rewrite all the tests.
 
-Make a second commit so you can compare test code with step 1.
+## Part 3 - debrief
 
-Which version do you prefer?
+Which version do you prefer? Why?
 
 
