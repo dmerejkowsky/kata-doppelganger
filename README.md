@@ -20,7 +20,7 @@ Here's the order in which you should fix the test - they go from easiest to tric
 
 ## Part 1 - without any library
 
-For this part, you are not allowed to add any external mock library.
+For this part, you are not allowed to add any external mock library (using the test framework is ok)
 
 Start by writing the tests naively - and then make it run (or compile) by adding clases
 to the test code (this is what we call a test double).
