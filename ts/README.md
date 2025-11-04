@@ -1,6 +1,5 @@
 # Running the tests in javascript
 
-* Install `yarn`
-* Run `yarn install` once
-* Run `yarn test`
-
+- Install `npm`
+- Run `npm install` once
+- Run `npm run test`
