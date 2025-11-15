@@ -9,7 +9,7 @@ public class DiscountApplierTest {
   }
 
   @Test
-  void should_notify_twice_when_applying_discount_for_two_users_v2() {
+  void should_notify_both_users_when_applying_discount_v2() {
     // TODO: write a test to demonstrate the bug in DiscountApplier.applyV2()
   }
 
