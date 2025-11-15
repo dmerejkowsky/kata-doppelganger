@@ -3,13 +3,13 @@
 public class DiscountApplierTest
 {
     [Test]
-    public void TestApplyV1()
+    public void ShouldNotifyTwiceWhenApplyingDiscountForTwoUsersV1()
     {
         // TODO: demonstrate the bug in DiscountApplier.ApplyV1()
     }
 
     [Test]
-    public void TestApplyV2()
+    public void ShouldNotifyBothUsersWhenApplyingDiscountV2()
     {
         // TODO: demonstrate the bug in DiscountApplier.ApplyV2()
     }

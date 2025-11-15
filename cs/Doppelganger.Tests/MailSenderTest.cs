@@ -3,13 +3,13 @@
 public class MailSenderTest
 {
     [Test]
-    public void TestSendV1()
+    public void ShouldMakeAValidHttpRequest()
     {
         // TODO: demonstrate the bug in MailSender.SendV1()
     }
 
     [Test]
-    public void TestSendV2()
+    public void ShouldRetryWhenGettingA503Error()
     {
         // TODO: demonstrate the bug in MailSender.SendV2()
     }
