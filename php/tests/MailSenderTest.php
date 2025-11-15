@@ -9,7 +9,7 @@ class MailSenderTest extends TestCase
     /**
      * @test
      */
-    public function sendV1(): void
+    public function should_make_a_valid_http_request(): void
     {
         // TODO: Demonstrate the bug in MailSender::sendV1()
     }
@@ -17,7 +17,7 @@ class MailSenderTest extends TestCase
     /**
      * @test
      */
-    public function sendV2(): void
+    public function should_retry_when_getting_a_503_error(): void
     {
         // TODO: Demonstrate the bug in MailSender::sendV2()
     }
